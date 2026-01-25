@@ -1,4 +1,4 @@
-from user_logging.login import Login
+from user_login.login import Login
 from profile_list.profile_list import ProfileList
 from profile_running.profile_running import ProfileRunning
 from configuration_manager.configuration_manager import ConfigurationManager

@@ -1,4 +1,4 @@
-from user_logging.login import Login
+from user_login.login import Login
 from profile_creation.connection_objects_retriever import ConnectionObjectsRetriever
 from profile_creation.object_fields_retriever import ObjectFieldsRetriever
 from profile_creation.profile_creation import ProfileCreation
