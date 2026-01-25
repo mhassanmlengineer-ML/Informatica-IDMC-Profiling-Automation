@@ -1,0 +1,12 @@
+# Connection configuration for IDMC
+
+connection_name: SQL_Server_Hassan      # Connection Name in IDMC Admin 
+data_source_type: SQL_SERVER            # Connection Type
+username: m_hassan.mk_dev               # Username 
+password: MH_e$01121083087              # Password
+max_records: 100000                     # Maximum number of returned objects from API. (Used only in ConnectionObjectsRetriever class)
+project_id: biO31paLhKUdl5clRWS4qP      # Federated ID for the project. Can be found in the URL of the project.
+folder_id: 9Rjv6RC96IbdZnisKvXt4L       # Federated ID for the folder. Can be found in the URL of the folder.
+org_id: lk59AL3E9sWfYufU5qM28U          # Organization ID
+source_path: dbo                        # Schema name
+output_results_folder: D:/Modon_profiling_automation/profile_results_sandbox/       # Path for saving the exported profile results.
