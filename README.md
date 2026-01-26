@@ -52,7 +52,41 @@ The project is organized into multiple packages based on functionality:
 
 - **`profile_results_export`**  
   - `ProfileResultExport` class to export results.  
-  - `export_results_main.py` → Entry point for exporting results.  
+  - `export_results_main.py` → Entry point for exporting results.
+```mermaid
+flowchart TD
+    CM[ConfigurationManager<br/>config.yml]
+    LG[Login<br/>IDMC Authentication]
+
+    SH[Shared Authenticated Context]
+
+    PL[Profile List]
+
+    CR[ConnectionRetriever]
+    CO[ConnectionObjectsRetriever]
+    OF[ObjectFieldsRetriever]
+    PC[ProfileCreation]
+    CPM[create_profiles_main.py]
+
+    PR[ProfileRunning<br/>run_profiles_main.py]
+    PE[ProfileResultExport<br/>export_results_main.py]
+
+    CM --> LG
+    LG --> SH
+
+    SH --> PL
+    SH --> CR
+    SH --> PR
+    SH --> PE
+
+    CR --> CO
+    CO --> OF
+    OF --> PC
+    PC --> CPM
+
+    PL -. optional input .-> PR
+    PL -. optional input .-> PE
+```
 
 ## Configuration
 - Open the config.yml file located in the configuration_manager package.
